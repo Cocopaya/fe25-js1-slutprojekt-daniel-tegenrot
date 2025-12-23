@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Movie Database</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./scripts/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="header-container">
+        <h1 id="typedHeader"></h1>
+      </div>
+      <form id="searchForm">
+        <label>What are you looking for?</label>
+        <select id="dropdown">
+          <option value="movie">Movie</option>
+          <option value="person">Person</option>
+        </select>
+        <label>Search</label>
+        <input id="searchInput" placeholder="Write something..." />
+        <button type="submit">Find</button>
+      </form>
+      <section class="section-divider">
+        <div>
+          <h2>10 best movies of all time</h2>
+          <button id="showBestMoviesButton">Show movies</button>
+        </div>
+        <div>
+          <h2>10 most popular movies right now</h2>
+          <button id="showPopularMoviesButton">Show movies</button>
+        </div>
+        <hr />
+      </section>
+      <p id="errorMessage"></p>
+      <section id="content"></section>
+    </main>
+  </body>
+</html>

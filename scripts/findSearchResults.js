@@ -23,7 +23,7 @@ function show(json, type) {
     if (type === "movie") {
       let imageSrc = result.poster_path
         ? `https://image.tmdb.org/t/p/w500/${result.poster_path}`
-        : "/assets/placeholder-picture.jpg";
+        : "assets/placeholder-picture.jpg";
 
       searchResult.innerHTML = `
         <h2>${result.title}</h2>
@@ -34,7 +34,7 @@ function show(json, type) {
     } else if (type === "person") {
       let imageSrc = result.profile_path
         ? `https://image.tmdb.org/t/p/w500/${result.profile_path}`
-        : "/assets/placeholder-picture.jpg";
+        : "assets/placeholder-picture.jpg";
 
       searchResult.innerHTML = `
         <h2>${result.name}</h2>

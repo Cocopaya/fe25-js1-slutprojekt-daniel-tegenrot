@@ -10,7 +10,7 @@ export function checkForErrors(res) {
   return res.json();
 }
 
-export function showErrorMessage() {
+export function showErrorMessage(err) {
   {
     const messageElement = document.querySelector("#errorMessage");
     if (err.message === "client") {

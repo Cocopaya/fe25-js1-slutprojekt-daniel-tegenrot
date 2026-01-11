@@ -18,7 +18,7 @@ export function showErrorMessage(err) {
     } else if (err.message === "server") {
       messageElement.innerText = "Server error. Please try again later.";
     } else {
-      messageElement.innerText = "Network error:";
+      messageElement.innerText = "Network error.";
     }
   }
 }
